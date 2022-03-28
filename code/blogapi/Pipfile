@@ -8,6 +8,7 @@ django = "~=3.2.0"
 environs = {extras = ["django"], version = "*"}
 djangorestframework = "*"
 dj-rest-auth = "*"
+django-allauth = "*"
 
 [dev-packages]
 
