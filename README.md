@@ -30,7 +30,7 @@ API functionality using the Django REST framework(DRF):
 ---
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/django_api/blob/master/LICENSE)
 ---
-### Reporting Bugs                                                              
-                                                                                 
+### Reporting Bugs
+
    Visit the [Issues page](https://github.com/kevinbowen777/django_api/issues)
       to view currently open bug reports or open a new issue.
