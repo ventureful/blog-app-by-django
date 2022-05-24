@@ -2,6 +2,7 @@
 # from: https://github.com/github/gitignore
 #
 package-lock.json
+django_api.sqlite3
 app.db
 .idea/
 logs/
