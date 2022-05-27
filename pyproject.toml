@@ -1,5 +1,5 @@
 [tool.black]
-line-length = 119
+line-length = 79
 # include =
 exclude = '''
 /(
@@ -9,9 +9,7 @@ exclude = '''
   | .venv
   | build
   | dist
-  | code/library/books/migrations/*
-  | code/blogapi/posts/migrations/*
-  | code/todo/backend/todos/migrations/*
+  | books/migrations/*
   | ^.*\b(migrations)\b.*$
 )/
 '''
