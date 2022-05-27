@@ -1,21 +1,21 @@
-## django_api - Django REST framework demo
+### django_api - Django REST framework demo
 
-This repository contains three separate applications demonstrating basic
-API functionality using the Django REST framework(DRF):
+This application demonstrates basic API functionality using the Django REST framework(DRF):
 
  - blogapi (deploys Swagger & ReDoc UI)
 
 ---
-## Installation
+### Installation
 
  - `git clone https://github.com/kevinbowen777/django_api.git`
  - `cd django_api`
- - `workon django_api` or `mkvirtualenv django_api`
- - `python manage.py runserver`
+ - `docker-compose up --build`
+     - `docker-compose exec blog_api-web python manage.py migrate`
+     - `docker-compose exec blog_api-web createsuperuser`
  - URLs:
-  - http://127.0.0.1:8000/api/v1
-  - http://127.0.0.1:8000/swagger
-  - http://127.0.0.1:8000/redoc
+     - http://127.0.0.1:8000/api/v1
+     - http://127.0.0.1:8000/swagger
+     - http://127.0.0.1:8000/redoc
 
 ---
 ### Screenshots
