@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     # 3rd-party apps
     "debug_toolbar",
+    "django_extensions",
     "rest_framework",
     "rest_framework.authtoken",
     "allauth",
