@@ -72,6 +72,7 @@ psycopg2-binary = "^2.9.3"
 coverage = {extras = ["toml"], version = "^6.4.1"}
 pytest-cov = "^3.0.0"
 pytest-django = "^4.5.2"
+whitenoise = "5.3.0"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.18.1"
