@@ -17,6 +17,12 @@ This application demonstrates basic API functionality using the Django REST fram
      - http://127.0.0.1:8000/swagger
      - http://127.0.0.1:8000/redoc
 
+### Live Demo on Heroku:
+ - [django-api-blog](https://kbowen-django-api-blog.herokuapp.com/api/v1/)
+ - [Swagger](https://kbowen-django-api-blog.herokuapp.com/swagger/)
+ - [Redoc](https://kbowen-django-api-blog.herokuapp.com/redoc/)
+
+
 ---
 ### Screenshots
 ![Post list](https://github.com/kevinbowen777/django_api/blob/master/images/drf_post_list.png)
