@@ -9,13 +9,39 @@ This application demonstrates basic API functionality using the Django REST fram
 
  - `git clone https://github.com/kevinbowen777/django_api.git`
  - `cd django_api`
- - `docker-compose up --build`
-     - `docker-compose exec blog_api-web python manage.py migrate`
-     - `docker-compose exec blog_api-web createsuperuser`
- - URLs:
-     - http://127.0.0.1:8000/api/v1
-     - http://127.0.0.1:8000/swagger
-     - http://127.0.0.1:8000/redoc
+ - Local installation
+     - `poetry install`
+     - `python manage.py migrate`
+     - `python manage.py createsuperuser`
+     - `python manage.py runserver`
+ - Docker installation
+     - `docker-compose up --build`
+     - `docker-compose python manage.py migrate`
+     - `docker-compose python manage.py createsuperuser`
+ - Open browser to http://127.0.0.1:8000
+
+---
+### URLs
+ - Log In endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/login/
+ - Log Out endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/logout/
+ - Password reset:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset
+ - Password reset confirmation:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset/confirm
+ - User registration endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/registration/
+ - User list:
+    http://127.0.0.1:8000/api/v1/users/
+ - User detail:
+    http://127.0.0.1:8000/api/v1/users/1/
+ - API schema download:
+    http://127.0.0.1:8000/api/schema/
+ - Redoc API browser:
+    http://127.0.0.1:8000/api/schema/redoc/
+ - Swagger-UI:
+    http://127.0.0.1:8000/api/schema/swagger-ui/
 
 ### Live Demo on Heroku:
  - [django-api-blog](https://kbowen-django-api-blog.herokuapp.com/api/v1/)
