@@ -27,3 +27,8 @@ class BlogTests(TestCase):
         self.assertEqual(author, "testuser1")
         self.assertEqual(title, "Blog title")
         self.assertEqual(body, "Body content...")
+
+    def test__str__(self):
+        post = Post.objects.get(id=1)
+        assert post.__str__() == post.title
+        assert str(post) == post.title
