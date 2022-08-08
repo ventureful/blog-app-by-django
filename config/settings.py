@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "dj_rest_auth.registration",
     "drf_yasg",
     # Local
+    "accounts.apps.AccountsConfig",
     "posts.apps.PostsConfig",
 ]
 
@@ -127,6 +128,8 @@ STATICFILE_FINDERS = [
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
