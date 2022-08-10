@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.views.generic import ListView
 from rest_framework import viewsets
 
 from .models import Post
@@ -15,3 +16,10 @@ class PostViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+
+class PostListView(ListView):
+    model = Post
+    template_name = "posts/post_list.html"
+
+    paginate_by = 5
