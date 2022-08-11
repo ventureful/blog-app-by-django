@@ -1,49 +1,53 @@
 from django.contrib.auth import get_user_model
-from django.test import TestCase
+from django.urls import reverse
+from rest_framework import status
+from rest_framework.test import APITestCase
 
 from .models import Post
 
 
-class BlogTests(TestCase):
-    def setUp(self):
-        self.user = get_user_model().objects.create_user(
-            username="johndoe",
-            email="johndoe.example.com",
-            password="secret",
-        )
-
-        self.post = Post.objects.create(
-            title="A good title",
-            body="Nice Body content",
-            author=self.user,
-        )
-
-    """
+class BlogTests(APITestCase):
     @classmethod
     def setUpTestData(cls):
-        # Create a user
-        testuser1 = get_user_model().objects.create_user(
-            username="testuser1", password="abc123"
+        cls.user = get_user_model().objects.create_user(
+            username="blogreader", password="T3stP@s5123"
         )
-        testuser1.save()
 
-        # Create a blog post
-        test_post = Post.objects.create(
-            author=testuser1, title="Blog title", body="Body content..."
+        cls.post = Post.objects.create(
+            author=cls.user, title="Blog title", body="Nice Body content..."
         )
-        test_post.save()
-    """
 
     def test_blog_content(self):
         post = Post.objects.get(id=1)
         author = f"{post.author}"
         title = f"{post.title}"
         body = f"{post.body}"
-        self.assertEqual(author, "johndoe")
-        self.assertEqual(title, "A good title")
-        self.assertEqual(body, "Nice Body content")
+        self.assertEqual(author, "blogreader")
+        self.assertEqual(title, "Blog title")
+        self.assertEqual(body, "Nice Body content...")
 
     def test__str__(self):
         post = Post.objects.get(id=1)
         assert post.__str__() == post.title
         assert str(post) == post.title
+
+    def test_api_listview(self):
+        self.client.login(username="blogreader", password="T3stP@s5123")
+        response = self.client.get(reverse("post_list"))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(Post.objects.count(), 1)
+        # self.assertContains(response, self.post)
+
+    def test_api_logged_out_deny_listview_access(self):
+        response = self.client.get(reverse("post_list"))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+    def test_api_detailview(self):
+        self.client.login(username="blogreader", password="T3stP@s5123")
+        response = self.client.get(
+            reverse("post_detail", kwargs={"pk": self.post.id}), format="json"
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(Post.objects.count(), 1)
+        self.assertContains(response, "Nice Body content...")
