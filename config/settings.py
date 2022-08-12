@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "bootstrap4",
     "crispy_forms",
+    "django_countries",
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
