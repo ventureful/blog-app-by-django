@@ -118,6 +118,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Default primary key field type
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = "/static/"
@@ -131,8 +133,8 @@ STATICFILE_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectorFinder",
 ]
 
-# Default primary key field type
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = str(BASE_DIR.joinpath("media"))
 
 AUTH_USER_MODEL = "accounts.CustomUser"
 

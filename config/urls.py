@@ -1,4 +1,5 @@
-from django.conf import settings  # noqa:F401
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from drf_yasg import openapi
@@ -43,7 +44,7 @@ urlpatterns = [
         schema_view.with_ui("redoc", cache_timeout=0),
         name="redoc",
     ),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 """
 if settings.DEBUG:
