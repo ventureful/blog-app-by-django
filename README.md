@@ -1,6 +1,14 @@
 ### django_api - Django REST framework demo
 
-This application demonstrates basic API functionality using the Django REST framework(DRF):
+<div align="center">
+
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+  [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/django_api.svg)](https://github.com/kevinbowen777/django_api/issues)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+ - This application demonstrates basic API functionality using the Django REST framework(DRF):
 
  - blogapi (deploys Swagger & ReDoc UI)
 
@@ -59,8 +67,6 @@ This application demonstrates basic API functionality using the Django REST fram
 
 ![ReDoc UI](https://github.com/kevinbowen777/django_api/blob/master/images/drf_redoc_ui.png)
 
----
-[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/django_api/blob/master/LICENSE)
 ---
 ### Reporting Bugs
 
