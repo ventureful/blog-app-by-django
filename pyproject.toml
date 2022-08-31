@@ -101,6 +101,8 @@ pytest = "^7.1.2"
 django-pytest = "^0.2.0"
 pytest-django = "^4.5.2"
 factory-boy = "3.0.1"
+pip-check = "^2.7"
+pip-audit = "^2.4.3"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
