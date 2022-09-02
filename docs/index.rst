@@ -1,5 +1,5 @@
-Bookstore - A Django web framework project
-======================================================
+django-api-blog - A blogging API built with the Django REST framework
+=====================================================================
 
 .. toctree::
    :hidden:
@@ -7,18 +7,14 @@ Bookstore - A Django web framework project
 
    license
 
-The template repository for the
-`Web Framework Projects <https://github.com/kevinbowen777/web-project-index>`_
-assembled by Kevin Bowen.
-This repository runs a Django 4.1 application demonstrating some of its
-basic functionality using the concept of a bookstore.
+This repository runs a Django 4.0.7/DRF 3.13 API application demonstrating some of its
+basic functionality using the concept of a blog.
 
 Features
 --------
 
- * add book reviews
- * upload book covers
- * basic search capability
+ * Browseable Web API
+ * SwaggerUI & ReDoc API documentation
  * User registration with email verification & social(GitHub) login
  * Bootstrap4 & crispy-forms decorations
  * Customizable user profiles with bio, profile picture & country flags
@@ -27,13 +23,13 @@ Features
 Installation
 ------------
 
-To install the bookstore project,
+To install the django_api project,
 run this command in your terminal:
 
 .. code-block:: console
 
-   $ git clone https://github.com/kevinbowen777/bookstore.git
-   $ cd bookstore
+   $ git clone https://github.com/kevinbowen777/django_api.git
+   $ cd django_api
 
 Local install:
 --------------
@@ -44,7 +40,7 @@ Local install:
    $ poetry install
    $ python manage.py migrate
    $ python manage.py createsuperuser
-   
+
 
 Docker install:
 ---------------
@@ -59,13 +55,36 @@ Docker install:
 Usage
 -----
 
-To run bookstore, locally, enter the following on the command line:
+To run django_api, locally, enter the following on the command line:
 
 .. code-block:: console
 
    $ python manage.py runserver
 
 For both local, or Docker installations, browse to `<http://127.0.0.1:8000>`_ or `<http://127.0.0.1:8000/admin/>`_
+
+Application URLs
+----------------
+ * Log In endpoint:
+    `<http://127.0.0.1:8000/api/v1/dj-rest-auth/login/>`_
+ * Log Out endpoint:
+    `<http://127.0.0.1:8000/api/v1/dj-rest-auth/logout/>`_
+ * Password reset:
+    `<http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset>`_
+ * Password reset confirmation:
+    `<http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset/confirm>`_
+ * User registration endpoint:
+    `<http://127.0.0.1:8000/api/v1/dj-rest-auth/registration/>`_
+ * User list:
+    `<http://127.0.0.1:8000/api/v1/users/>`_
+ * User detail:
+    `<http://127.0.0.1:8000/api/v1/users/1/>`_
+ * API schema download:
+    `<http://127.0.0.1:8000/api/schema/>`_
+ * Redoc API browser:
+    `<http://127.0.0.1:8000/api/schema/redoc/>`_
+ * Swagger-UI:
+    `<http://127.0.0.1:8000/api/schema/swagger-ui/>`_
 
 Testing
 -------
@@ -82,9 +101,9 @@ Testing
 
 Live Application Demonstration on Heroku
 ----------------------------------------
-`kbowen-django-bookstore <https://kbowen-django-bookstore.herokuapp.com/>`_
+`kbowen-django-api-blog <https://kbowen-django-api-blog.herokuapp.com/>`_
 
 Reporting Bugs
 --------------
 
-Visit the bookstore `Issues page <https://github.com/kevinbowen777/bookstore/issues>`_ on GitHub.
+Visit the django_api `Issues page <https://github.com/kevinbowen777/django_api/issues>`_ on GitHub.
