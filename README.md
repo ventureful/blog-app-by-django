@@ -1,9 +1,9 @@
-### django_api
+### django-api-blog
 
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/django_api.svg)](https://github.com/kevinbowen777/django_api/issues)
+  [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/django-api-blog.svg)](https://github.com/kevinbowen777/django-api-blog/issues)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -48,8 +48,8 @@
 ---
 ### Installation
 
- - `git clone https://github.com/kevinbowen777/django_api.git`
- - `cd django_api`
+ - `git clone https://github.com/kevinbowen777/django-api-blog.git`
+ - `cd django-api-blog`
  - Local installation
      - `poetry install`
      - `python manage.py migrate`
@@ -104,17 +104,17 @@ A live application demonstration hosted at Heroku
 ---
 
 ### Screenshots
-![Post list](https://github.com/kevinbowen777/django_api/blob/master/images/drf_post_list.png)
+![Post list](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_post_list.png)
 
-![User list](https://github.com/kevinbowen777/django_api/blob/master/images/drf_user_list.png)
+![User list](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_user_list.png)
 
-![Swagger UI](https://github.com/kevinbowen777/django_api/blob/master/images/drf_swagger_ui.png)
+![Swagger UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_swagger_ui.png)
 
-![ReDoc UI](https://github.com/kevinbowen777/django_api/blob/master/images/drf_redoc_ui.png)
+![ReDoc UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_redoc_ui.png)
 
 ---
 
 ### Reporting Bugs
 
-   Visit the [Issues page](https://github.com/kevinbowen777/django_api/issues)
+   Visit the [Issues page](https://github.com/kevinbowen777/django-api-blog/issues)
       to view currently open bug reports or open a new issue.
