@@ -51,7 +51,7 @@ extend_skip = ["*.md", "*.json"]
 line_length = 79
 
 [tool.poetry]
-name = "django_api"
+name = "django-api-blog"
 version = "0.1.0"
 description = "A Django REST Framework(DRF) sandbox"
 authors = ["Kevin Bowen <kevin.bowen@gmail.com>"]
