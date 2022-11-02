@@ -68,7 +68,6 @@ django-bootstrap4 = "^22.2"
 django-crispy-forms = "^1.14.0"
 Pillow = "^9.3.0"
 django-countries = "^7.3.2"
-cryptography = "38.0.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.18.1"
