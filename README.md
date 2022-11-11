@@ -110,14 +110,30 @@ A live application demonstration hosted at Heroku
 ---
 
 ### Screenshots
-![Post list](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_post_list.png)
 
-![User list](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_user_list.png)
+### Home
+![Home](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_home.png)
 
-![Swagger UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_swagger_ui.png)
+### Index
+![Message Index](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_index.png)
 
-![ReDoc UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/drf_redoc_ui.png)
+### Profile Page
+![Profile Page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_profile-page.png)
 
+### Login Page
+![Login Page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_sign-in.png)
+
+### Post List View
+![Post List View](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_post-list-view.png)
+
+### Swagger-UI
+![Swagger-UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_swagger-ui.png)
+
+### Redoc API page
+![Redoc API page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_redoc-ui.png)
+
+### Email Address management
+![Email Address management](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_email-addresses.png)
 ---
 
 ### Reporting Bugs
