@@ -3,6 +3,10 @@ from django.db import models
 
 
 class Post(models.Model):
+    """
+    Stores a single blog entry, related to :model:`accounts.CustomUser`
+    """
+
     author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
     body = models.TextField()

@@ -8,6 +8,19 @@ from .serializers import PostSerializer, UserSerializer
 
 
 class PostList(generics.ListCreateAPIView):
+    """
+    Display a list of :model:`posts.Post`.
+
+    **Context**
+
+    ``Post``
+        An instance of :model:`posts.Post`
+
+    **Template**
+
+    :template:`posts/post_list.html`
+    """
+
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = Post.objects.all()
     serializer_class = PostSerializer
