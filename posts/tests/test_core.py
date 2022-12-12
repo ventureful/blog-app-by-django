@@ -1,3 +1,6 @@
+"""
+Note: The following are tests used prior to creating PostFactory
+
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework import status
@@ -51,3 +54,4 @@ class BlogTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(Post.objects.count(), 1)
         self.assertContains(response, "Nice Body content...")
+"""
