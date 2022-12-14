@@ -120,28 +120,28 @@ TBD
 ### Screenshots
 
 ### Home
-![Home](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_home.png)
+![Home](images/django-api-blog_home.png)
 
 ### Index
-![Message Index](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_index.png)
+![Message Index](images/django-api-blog_index.png)
 
 ### Profile Page
-![Profile Page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_profile-page.png)
+![Profile Page](images/django-api-blog_profile-page.png)
 
 ### Login Page
-![Login Page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_sign-in.png)
+![Login Page](images/django-api-blog_sign-in.png)
 
 ### Post List View
-![Post List View](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_post-list-view.png)
+![Post List View](images/django-api-blog_post-list-view.png)
 
 ### Swagger-UI
-![Swagger-UI](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_swagger-ui.png)
+![Swagger-UI](images/django-api-blog_swagger-ui.png)
 
 ### Redoc API page
-![Redoc API page](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_redoc-ui.png)
+![Redoc API page](images/django-api-blog_redoc-ui.png)
 
 ### Email Address management
-![Email Address management](https://github.com/kevinbowen777/django-api-blog/blob/master/images/django-api-blog_email-addresses.png)
+![Email Address management](images/django-api-blog_email-addresses.png)
 ---
 
 ### Reporting Bugs
