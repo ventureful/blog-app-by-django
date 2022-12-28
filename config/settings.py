@@ -162,6 +162,12 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 5,
 }
 
+SPECTACULAR_SETTINGS = {
+    "TITLE": "django-api-blog",
+    "DESCRIPTION": "A basic demo of Django API functionality using DRF",
+    "VERSION": "0.1.0",
+}
+
 # django-allauth config
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
