@@ -2581,14 +2581,14 @@ files = [
 
 [[package]]
 name = "sphinx"
-version = "6.1.1"
+version = "6.0.1"
 description = "Python documentation generator"
 category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Sphinx-6.1.1.tar.gz", hash = "sha256:6a8e43b5030b9870d7402fb56f5efeebb83b76d65bf1c567a89b555340e127b2"},
-    {file = "sphinx-6.1.1-py3-none-any.whl", hash = "sha256:5818c36a250f60d2767f2cee14247b7f39882d97f582e3696958000b65665c5b"},
+    {file = "Sphinx-6.0.1.tar.gz", hash = "sha256:6217d768c3c865769c1561ea31c2f27d3bea413c9b0e1fd4722811ea148a4a46"},
+    {file = "sphinx-6.0.1-py3-none-any.whl", hash = "sha256:4ad5caa630835a794ee4f6f4772300f407b7d6ac05b418abfb5c7c38f9b24d18"},
 ]
 
 [package.dependencies]
@@ -2611,7 +2611,7 @@ sphinxcontrib-serializinghtml = ">=1.1.5"
 
 [package.extras]
 docs = ["sphinxcontrib-websupport"]
-lint = ["docutils-stubs", "flake8 (>=3.5.0)", "flake8-simplify", "isort", "mypy (>=0.990)", "ruff", "sphinx-lint", "types-requests"]
+lint = ["docutils-stubs", "flake8 (>=3.5.0)", "flake8-bugbear", "flake8-comprehensions", "flake8-simplify", "isort", "mypy (>=0.990)", "sphinx-lint", "types-requests"]
 test = ["cython", "html5lib", "pytest (>=4.6)"]
 
 [[package]]
@@ -2939,4 +2939,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ab0be50c267508aab389a56ac9999d69f9937db6c18128dff960d2643d63fd5a"
+content-hash = "ee90224fbfcad8650e3c83fe40e99884228f104d1d703e216891debc4f9cd87d"
