@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "bootstrap4",
     "crispy_forms",
+    "crispy_bootstrap4",
     "django_countries",
     # Local
     "accounts.apps.AccountsConfig",
@@ -209,6 +210,15 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool(
 SECURE_HSTS_PRELOAD = env.bool("DJANGO_SECURE_HSTS_PRELOAD", default=True)
 SESSION_COOKIE_SECURE = env.bool("DJANGO_SESSION_COOKIE_SECURE", default=True)
 CSRF_COOKIE_SECURE = env.bool("DJANGO_CSRF_COOKIE_SECURE", default=True)
+
+# django-crispy-forms
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_CLASS_CONVERTERS = {
+    "textinput": "textinput textInput",
+    "fileinput": "fileinput fileUpload",
+    "passwordinput": "textinput textInput",
+}
 
 ADMINS = [("Kevin Bowen", "kevinbowen@protonmail.com")]
 MANAGERS = ADMINS
