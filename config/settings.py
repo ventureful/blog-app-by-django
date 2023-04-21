@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     "dj_rest_auth",
     "dj_rest_auth.registration",
     "drf_yasg",
-    "bootstrap4",
     "crispy_forms",
     "crispy_bootstrap4",
     "django_countries",
